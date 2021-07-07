@@ -5,16 +5,16 @@ body{
 nav {
   display: flex;
   overflow: hidden;
-  align-items: center;
   padding: 6px;
   justify-content: space-between;
 }
 nav a{
-  display: inline-block;
+  display: inline-flex;
   padding: 5px;
   margin: 0 5px;
   color: #222;
   cursor: pointer;
+  vertical-align: middle;
 }
 a:hover {
   text-decoration: underline;
@@ -32,9 +32,7 @@ footer a{
   white-space: nowrap;
   color: #70757a;
 }
-.top-nav-right {
-  justify-items: end;
-}
+
 
 input[type='submit']{
   background-color: #f8f9fa;
