@@ -15,60 +15,72 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <header>
-        <nav>
-            <ul>
-                <li>About</li>
-                <li>Store</li>
-                <li>Gmail</li>
-                <li>Images</li>
-            </ul>
-            <button>
-                Apps PH
-            </button>
-            <button>
-                Account PH
-            </button>
+      <nav>
+        <div>
+          <a>About</a>
+          <a>Store</a>  
+        </div>
+        <div class='top-nav-right'>
+          <a>Gmail</a>
+          <a>Images</a>
+          <button>
+            Apps PH
+          </button>
+          <button>
+            Account PH
+          </button>
+        </div>
         </nav>
     </header>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <img class="lnXdpd" alt="Google" height="92" 
-        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
-        width="272" data-atf="1">
-        <form id="searchBar" style="border: solid 2px gray; width:50%;" action="get">
+        <div style='display: flex; flex-direction: column; align-items: center;'>
+          <img class="lnXdpd" alt="Google" height="92" 
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+          width="272" data-atf="1">
+        </div>
+        <div style='display: flex; flex-direction: column; align-items: center; margin-top: 40px;'>
+          <form id="searchBar" style="border: solid 2px gray; width:50%;" action="get">
             <label for="search">
-                <span class="material-icons-outlined">
-                    search
-                </span>
+              <span class="material-icons-outlined">search</span>
             </label>
-           <input style="border:none;" type="text" name="search" id="search">
-        </form>
-        <label for=searchInput>
-            <input form="searchBar" type="submit" value="Google Search">
-        </label>
-        <label for="imFeelingLucky">
-            <input type="submit" value="I'm Feeling Lucky">
-        </label>
-        <div>
-            <span class="material-icons">
+              <input style="border:none;" type="text" name="search" id="search">
+          </form>    
+          <div style='display: flex; flex-direction: row; margin-top: 20px;'>
+            <label for=searchInput>
+              <input form="searchBar" type="submit" value="Google Search">
+            </label>
+            <label for="imFeelingLucky">
+              <input type="submit" value="I'm Feeling Lucky">
+            </label>
+          </div>  
+          <div>
+             <span class="material-icons">
                 lock
-            </span>
-            <a href="https://www.google.com/url?q=https://blog.google/products/search/five-ways-were-making-google-the-safer-way-to-search%3Futm_source%3Dhpp%26utm_medium%3Dreferral%26utm_campaign%3Dsearchsafety%26utm_content%3D%26utm_term%3D&source=hpp&id=19024754&ct=3&usg=AFQjCNGHhoTpTA7oQ06nG6dNX5rX-zpUpA&sa=X&ved=0ahUKEwiMqcSzkJDxAhWSIzQIHWV8DrUQ8IcBCBA">
-            Learn how Google helps keep you safe while you search
-            </a>
+              </span>
+              <a href="https://www.google.com/url?q=https://blog.google/products/search/five-ways-were-making-google-the-safer-way-to-search%3Futm_source%3Dhpp%26utm_medium%3Dreferral%26utm_campaign%3Dsearchsafety%26utm_content%3D%26utm_term%3D&source=hpp&id=19024754&ct=3&usg=AFQjCNGHhoTpTA7oQ06nG6dNX5rX-zpUpA&sa=X&ved=0ahUKEwiMqcSzkJDxAhWSIzQIHWV8DrUQ8IcBCBA">
+                Learn how Google helps keep you safe while you search
+              </a>
+          </div>     
         </div>
         <footer>
-            <ul>
-                <li>Advertising</li>
-                <li>Business</li>
-                <li>How Search works</li>
-                <li>Carbon neutral since 2007</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Settings</li>
-            </ul>
+            <div style='display: flex; flex-wrap: wrap; justify-content: space-between;'>
+                <div style='display: flex; flex-wrap: wrap; justify-content: flex-start; min-width: 30%; order: 1;'>
+                  <a>Advertising</a>
+                  <a>Business</a> 
+                  <a>How Search works</a>  
+                </div>
+                <div style="order: 2;">
+                 <a>Carbon neutral since 2007</a>   
+                </div>
+                <div style='display: flex; flex-wrap: wrap; justify-content: flex-end; order: 3; min-width: 30%;'>
+                  <a>Privacy</a>
+                  <a>Terms</a>
+                  <a>Settings</a>   
+                </div>
+            </div>
         </footer>
         <script src="" async defer></script>
     </body>
