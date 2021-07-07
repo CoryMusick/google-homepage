@@ -1,4 +1,7 @@
-
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
 nav {
   display: flex;
   overflow: hidden;
@@ -27,6 +30,7 @@ footer a{
   display: block; 
   padding: 15px; 
   white-space: nowrap;
+  color: #70757a;
 }
 .top-nav-right {
   justify-items: end;
